@@ -1,5 +1,30 @@
-# Your starting point for your next great web app
+# Available Scripts
 
-The purpose for this repository is to serve as a base project for your next [Node](http://nodejs.org/) and [Express](http://expressjs.com/) web app. Clone it and you are ready to go.
+## Development
 
-It will provide you with a simple but solid structure on which to build on. We will do our best to keep it up to date with the latest node and express versions.
+In the project directory, you can run:
+
+```
+npm run dev
+```
+
+Runs the server in the development mode.<br />
+
+The server will reload if you make edits.<br />
+You will also see typescript errors in the console.
+
+## Build
+
+```
+npm run build
+```
+
+Compiles the server to the `dist` folder.<br />
+
+## Start
+
+```
+npm run start
+```
+
+Will run the server from the `dist` folder.

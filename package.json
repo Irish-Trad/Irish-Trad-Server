@@ -1,27 +1,32 @@
 {
-  "name": "irish-trad.net-server",
+  "name": "irish-trad-server",
   "version": "1.0.0",
-  "description": "Basic structure for Express web apps.",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "node_modules/.bin/mocha --recursive tests"
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p ."
   },
-  "keywords": [
-    "base",
-    "project",
-    "node",
-    "express",
-    "structure"
-  ],
-  "author": "Terlici Ltd.",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irish-Trad/Irish-Trad-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irish-Trad/Irish-Trad-Server/issues"
+  },
+  "homepage": "https://github.com/Irish-Trad/Irish-Trad-Server#readme",
   "dependencies": {
-    "express": "^4.16.0",
-    "pug": "^2.0.3"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "mocha": "^8.0.1",
-    "should": "^13.2.3"
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.35",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }
