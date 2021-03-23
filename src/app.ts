@@ -50,7 +50,7 @@ app.post('/contact', (req: Request, res: Response) => {
     from: process.env.EMAIL, // sender address
     to: process.env.EMAIL, // list of receivers
     subject: 'Irish Trad Contact Form', // Subject line
-    text: message, // plain text body
+    text: `Name: ${name} Email: ${email} Message: ${message}`, // plain text body
     html: output, // html body
   }
 
