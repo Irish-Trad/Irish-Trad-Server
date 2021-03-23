@@ -47,8 +47,9 @@ app.post('/contact', (req: Request, res: Response) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: process.env.EMAIL, // sender address
+    from: `"Irish Trad Contact" <${process.env.EMAIL}>`, // sender address
     to: process.env.EMAIL, // list of receivers
+    replyTo: email,
     subject: 'Irish Trad Contact Form', // Subject line
     text: `Name: ${name} Email: ${email} Message: ${message}`, // plain text body
     html: output, // html body
