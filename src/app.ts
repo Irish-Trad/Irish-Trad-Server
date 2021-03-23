@@ -7,6 +7,7 @@ import express, {
 } from 'express'
 import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
+import cors from 'cors'
 
 dotenv.config()
 
@@ -16,6 +17,9 @@ const app: Application = express()
 // Body Parser Middleware
 app.use(urlencoded({ extended: false }))
 app.use(json())
+
+// Cors
+app.use(cors())
 
 app.post('/contact', (req: Request, res: Response) => {
   const { name, email, message } = req.body
